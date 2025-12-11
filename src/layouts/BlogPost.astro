@@ -50,6 +50,24 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			.last-updated-on {
 				font-style: italic;
+		.author-info {
+			margin: 2em 0;
+			padding: 1.5em;
+			background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
+			border-left: 4px solid rgb(99, 102, 241);
+			border-radius: 8px;
+		}
+		.author-info .author {
+			margin: 0 0 0.5em 0;
+			font-size: 1.1em;
+			color: rgb(var(--gray-dark));
+		}
+		.author-info .reading-time {
+			margin: 0;
+			font-size: 0.95em;
+			color: rgb(var(--gray));
+			font-style: italic;
+		}
 			}
 		</style>
 	</head>
@@ -75,6 +93,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						</div>
 						<h1>{title}</h1>
 						<hr />
+					<div class="author-info">
+						<p class="author">By <strong>mel c</strong></p>
+						<p class="reading-time">☕ Grab a coffee and enjoy reading</p>
+					</div>
 					</div>
 					<slot />
 				</div>
