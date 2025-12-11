@@ -12,8 +12,7 @@
 		"publish": true
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^13.0.0",
-		"@astrojs/mdx": "^4.3.0",
+        "@astrojs/cloudflare": "^12.6.11",		"@astrojs/mdx": "^4.3.0",
 		"@astrojs/rss": "^5.0.0",
 		"@astrojs/sitemap": "^3.6.0",
 		"astro": "^5.0.0",
